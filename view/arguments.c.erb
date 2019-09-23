@@ -1,0 +1,6 @@
+<% for i in 0..@list.count-2 do %>
+<%= @list[i].render %>, <% %>
+<% end %>
+<% if @list.count > 0 %>
+<%= @list.last.render %>
+<% end %>
