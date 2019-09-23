@@ -20,6 +20,21 @@ require_relative 'CharacterLiteral'
 require_relative 'IntegerLiteral'
 require_relative 'FloatingPointLiteral'
 
+require_relative 'Gen'
+
+require_relative 'Test1'
+require_relative 'Test2'
+
+g1a = Gen::Test1a.new(10)
+g1b = Gen::Test1b.new(20)
+
+puts g1a.val
+puts g1b.val
+
+g2 = Gen::Test2.new(30)
+
+puts g2.val
+
 
 e0 = CharacterLiteral.new("t");
 puts e0.render();
